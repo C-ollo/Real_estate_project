@@ -1,9 +1,10 @@
 import express from 'express';
 import { verifyToken } from '../utils/verifyUser.js';
-import { createListing, deleteListing } from '../contollers/listing.contoller.js';
+import { createListing, deleteListing, updateListing } from '../contollers/listing.contoller.js';
 const router = express.Router();
 
 
 router.post('/create', verifyToken, createListing);
 router.delete('/delete/:id', verifyToken, deleteListing);
+router.post('/update/:id', verifyToken, updateListing);
 export default router;
