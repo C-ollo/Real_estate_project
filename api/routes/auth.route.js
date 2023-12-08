@@ -4,7 +4,7 @@ import { authSignup, google, signIn, signOut } from '../contollers/auth.controll
 const authRouter = express.Router();
 
 authRouter.post('/signup',authSignup);
-authRouter.get('/signup',signOut);
+authRouter.get('/signout',signOut);
 authRouter.post('/signin',signIn);
 authRouter.post('/google', google);
 
