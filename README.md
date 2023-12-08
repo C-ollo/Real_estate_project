@@ -54,9 +54,9 @@ GOOGLE_CLIENT_ID=your_google_client_id
 Run the Application
 
 ### Start the Backend Server
-cd api
+cd api &&
 npm run dev
 
 ### Start the Frontend Application
-cd client
+cd client &&
 npm run dev
